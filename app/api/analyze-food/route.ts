@@ -118,12 +118,7 @@ Return ONLY the JSON object with REAL nutritional values, nothing else.`;
 
     const responseData = await response.json();
     const content = responseData.choices[0].message.content;
-    
-    // Log the exact GPT response to console
-    console.log("=== GPT RESPONSE START ===");
-    console.log(content);
-    console.log("=== GPT RESPONSE END ===");
-    
+        
     // Parse and validate the JSON response
     const data = JSON.parse(content);
 
